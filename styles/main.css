@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.header>.acmlogo {
+    margin: 10px;
+}
+
+.header>.vitlogo {
+    margin: 10px;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    align-items: center;
+    height: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+.nav>a:link, a:visited {
+    text-decoration: none !important;
+    color: white;
+    padding: 14px 15px;
+    border-radius: 6px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.nav>a:hover, a:active, a:focus {
+    background-color: #5fbbed;
+    color: black;
+}
+
+.non-nav {
+    height: 100vh;
+}
+
+.home {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/stockimages/azharul-islam-9LMGWHqUwnc-unsplash.jpg");
+    min-height: 400px;
+}
+
+.stockimg {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+}
+
+.home>h1, p {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px #000000;
+    font-size: 1.5em;
+}
+
+.team {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    background-image: url(/stockimages/jay-wennington-EHp92wvf3Vg-unsplash.jpg);
+    min-height: 400px;
+}
+
+.carousel {
+    border-radius: 2px;
+}
+
+.carousel-cell {
+    margin-right: 20px;
+    overflow: hidden;
+}
+
+.carousel-cell img {
+    display: block;
+    height: 200px;
+}
+
+.team>p {
+    margin: 10px;
+}
+
+.events {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/stockimages/franck-v-tOjIx_NyzFo-unsplash.jpg);
+    min-height: 400px;
+}
+
+.bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    /* align-items: center; */
+    justify-content: center;
+    background-image: url(/stockimages/peter-g-8y3e2M6APy4-unsplash.jpg);
+    min-height: 400px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.form>input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 45px;
+    text-indent: 10px;
+    border-radius: 6px;
+}
+
+.form>textarea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+    padding-top: 10px;
+    border-radius: 6px;
+}
+
+.form>button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    width: 150px;
+    align-self: center;
+    background-color: #5fbbed;
+    color: black;
+    border-radius: 6px;
+    border: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+footer>p {
+    font-size: 1em;
+    
+}
+
+@media screen and ( min-width: 768px) {
+    .carousel-cell img {
+        height: 400px;
+    }
+}
