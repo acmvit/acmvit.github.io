@@ -9,7 +9,8 @@
 .header {
     display: flex;
     flex-direction: row;
-    height: 100%;
+    justify-content: space-evenly;
+    height: 70px;
 }
 
 .header>.acmlogo {
@@ -17,6 +18,10 @@
 }
 
 .header>.vitlogo {
+    margin: 10px;
+}
+
+.header>.avlogo {
     margin: 10px;
 }
 
